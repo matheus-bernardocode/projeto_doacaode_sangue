@@ -6,10 +6,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav>
+    </nav>
     
     <h1>Cadastro de Doadores</h1>
 
     <form id="formdoacao">
+         <input type="text" id="nome" placeholder="Nome completo"><br>
+        <input type="email" id="email" placeholder="Email"><br>
+        <input type="number" id="idade" placeholder="Idade"><br>
+        <input type="number" id="peso" placeholder="Peso"><br>
+
+        <select id="tipoSanguineo">
+            <option value="">Selecione o tipo sanguíneo</option>
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>O+</option>
+            <option>O-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+        </select><br>
+
+        <input type="text" id="telefone" placeholder="Telefone"><br>
+        <input type="text" id="cidade" placeholder="Cidade"><br>
+        <input type="text" id="estado" placeholder="Estado"><br>
+
+        <button type="submit">Cadastrar</button>
 
     </form>
 </body>
