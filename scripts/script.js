@@ -63,4 +63,29 @@ document.getElementById("formdoacao").addEventListener("submit", function(e) {
         return;
     }
 
+    //OBJETO
+    let doador = {
+        nome: nome,
+        email: email,
+        idade: idade,
+        peso: peso,
+        tipoSanguineo: tipoSanguineo,
+        telefone: telefone,
+        cidade: cidade,
+        estado: estado
+    };
+
+    //Adiciona no array
+    doadores.push(doador);
+
+    //Exibe no console
+    console.log(doadores);
+
+    //Exibe na tela
+    document.getElementById("resultado").textContent =
+        JSON.stringify(doadores, null, 2);
+
+    //Limpar forms
+    document.getElementById("formDoacao").reset();
+
 });
